@@ -50,7 +50,7 @@ function LoadAtVectorIndex(indexComposite, index)
     local compositeType = LookupTableGetCompositeNameFromIndex(indexComposite)
     local v = LookupTableGetVectorFromIndex(indexComposite, index)
 
-    local composite = exports["gathering_foliage"]:NativeCreateComposite(GetHashKey(compositeType), v.x, v.y, v.z, false)
+    local composite = exports["frp_gathering_foliage"]:NativeCreateComposite(GetHashKey(compositeType), v.x, v.y, v.z, false)
 
     pop[indexComposite][index] = composite
 end
